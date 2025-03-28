@@ -4,7 +4,10 @@
   "description": "",
   "scripts": {
     "cv": "pnpm changeset version",
-    "ci:publish": "pnpm publish -r"
+    "ci:publish": "pnpm publish -r",
+    "biome:lint": "pnpm biome lint",
+    "biome:format": "pnpm biome format",
+    "biome:check": "pnpm biome check"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +17,7 @@
     "node": "20.19.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@changesets/cli": "^2.28.1"
   }
 }
