@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* 基础配置 */
+    "module": "ESNext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+
+    /* React 支持 */
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+
+    /* 类型声明与检查 */
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "skipLibCheck": true,
+    "types": ["react", "react-dom"],
+    "noUncheckedIndexedAccess": true,
+
+    /* 严格模式 */
+    "strict": true,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+
+    /* 模块互操作性 */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* 源码映射 */
+    "sourceMap": true,
+    "inlineSources": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "types/**/*.d.ts"],
+  "exclude": ["node_modules", "dist", "**/__tests__/*"],
+  "extensions": [".ts", ".tsx", ".json"]
+}
